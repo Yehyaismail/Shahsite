@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تيسير للرعاية الطبية المنزلية | Taysir Care</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* تنسيق الأزرار العلوية لتصبح أزرار حقيقية وفخمة بدلاً من الروابط التقليدية */
+        .hero-links-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .btn-whatsapp-hero {
+            background-color: #25D366;
+            color: white !important;
+            padding: 12px 26px;
+            border-radius: 30px;
+            text-decoration: none !important;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .btn-whatsapp-hero:hover {
+            background-color: #20ba56;
+            transform: translateY(-2px);
+        }
+        .btn-services-hero {
+            background-color: transparent;
+            color: #1e3a8a !important;
+            padding: 12px 26px;
+            border-radius: 30px;
+            text-decoration: none !important;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid #1e3a8a;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-services-hero:hover {
+            background-color: #1e3a8a;
+            color: white !important;
+            transform: translateY(-2px);
+        }
+
+        /* إصلاح الصورة الدائرية العلوية لمنع خروجها عن الإطار وتداخلها */
+        .main-hero-image-wrapper {
+            position: relative;
+            width: 310px;
+            height: 310px;
+            margin: 30px auto;
+            border-radius: 50%;
+            border: 3px dashed #38bdf8; /* الإطار الأزرق المتقطع */
+            padding: 8px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        .main-hero-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+        /* 🌟 تنسيق الأيقونات البيضاء الدائرية لتبدو تماماً كأيقونات التطبيقات المحترفة الموحدة */
+        .icon-box, .s-icon {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            background: linear-gradient(135deg, #0284c7, #1e3a8a) !important; /* تدرج أزرق فخم متناسق مع الهوية */
+            color: #ffffff !important; /* لون الأيقونة أبيض ناصع */
+            font-size: 24px !important;
+            border-radius: 50% !important;
+            width: 65px !important;
+            height: 65px !important;
+            margin: 0 auto 15px auto !important;
+            box-shadow: 0 4px 10px rgba(30, 58, 138, 0.15) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="pulse-icon">🩺</span> تيسير<span> للرعاية</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#why-us">لماذا نحن</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#reviews">التقييمات</a>
+                <a href="#order-form">طلب الخدمة</a>
+            </nav>
+            <a href="tel:+966501439874" class="nav-btn">اتصل الآن</a>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text" style="text-align: center;">
+                <span class="badge">رعاية طبية منزلية متكاملة</span>
+                <h1 style="font-size: 2.2rem; color: #1e3a8a; font-weight: 900; margin-top: 15px;">منصة تيسير للرعاية الطبية والتمريض المنزلي</h1>
+                <p style="color: #64748b; font-size: 16px; max-width: 600px; margin: 15px auto; line-height: 1.8;">نحن هنا لنخفف عنكم ونوفر أفضل طاقم طبي وتمريضي مرخص لرعاية أحبائكم وكبار السن في راحة منازلهم وبأعلى معايير الأمان والسلامة الطبية في المملكة.</p>
+                
+                <div class="hero-links-container">
+                    <a href="https://wa.me/966501439874" target="_blank" class="btn-whatsapp-hero"><i class="fab fa-whatsapp"></i> تواصل وتس اب </a>
+                    <a href="#services" class="btn-services-hero"> خدماتنا</a>
+                </div>
+            </div>
+            
+            <div class="main-hero-image-wrapper">
+                <img src="IMG_2802.JPG" alt="رعاية طبية منزلية">
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="why-section">
+        <div class="container">
+            <div class="sec-header">
+                <h2>لماذا تختار تيسير للرعاية المنزلية؟</h2>
+                <p>نجمع بين الكفاءة الطبية العالية والرحمة الإنسانية لتقديم تجربة رعاية استثنائية.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="icon-box"><i class="fas fa-user-md"></i></div>
+                    <h3>طاقم طبي مرخص</h3>
+                    <p>جميع الكوادر التمريضية والأخصائيين مرخصين ومؤهلين من هيئة التخصصات الصحية.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon-box"><i class="fas fa-clock"></i></div>
+                    <h3>رعاية على مدار الساعة</h3>
+                    <p>نوفر جداول مرنة وأنظمة تعاقد شهرية أو زيارات يومية تغطي كافة احتياجاتكم طوال 24 ساعة.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon-box"><i class="fas fa-heart"></i></div>
+                    <h3>اهتمام نفسي ودعم كامل</h3>
+                    <p>لا نقدم رعاية طبية فحسب، بل نهتم بالحالة النفسية للمريض ونوفر له رفيقاً يدعمه اجتماعياً.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon-box"><i class="fas fa-award"></i></div>
+                    <h3>تقارير دورية للأهل</h3>
+                    <p>نتابع المؤشرات الحيوية بشكل دقيق ونشارك العائلة بتقارير صحية مستمرة لراحة بالكم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="sec-header">
+                <h2>خدماتنا الطبية المتميزة</h2>
+                <p>رعاية صحية شاملة تصلك أينما كنت وفي أي وقت تطلبه</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="s-icon"><i class="fas fa-syringe"></i></div>
+                    <h3>التمريض المنزلي الشامل</h3>
+                    <p>متابعة الخطط العلاجية، إعطاء الحقن والمحاليل، رعاية القسطرة، وتنظيم المواعيد الصارمة للأدوية والعلامات الحيوية.</p>
+                </div>
+                <div class="service-card">
+                    <div class="s-icon"><i class="fas fa-user-nurse"></i></div>
+                    <h3>رعاية كبار السن والمسنين</h3>
+                    <p>عناية يومية فائقة بخصوصية تامة تشمل النظافة الشخصية، المساعدة في الحركة، التغذية، والمرافقة الدائمة لضمان سلامتهم.</p>
+                </div>
+                <div class="service-card">
+                    <div class="s-icon"><i class="fas fa-crutch"></i></div>
+                    <h3>العلاج الطبيعي والتأهيل</h3>
+                    <p>جلسات منزلية متخصصة لاستعادة اللياقة الحركية، تحسين التوازن، وتخفيف الآلام الناتجة عن الجلطات أو الشيخوخة.</p>
+                </div>
+                <div class="service-card">
+                    <div class="s-icon"><i class="fas fa-band-aid"></i></div>
+                    <h3>العناية بالجروح والقرح</h3>
+                    <p>غيار طبي معقم وقائي وعلاجي لقرح الفراش وجروح العمليات الجراحية والقدم السكري لمنع أي مضاعفات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="sec-header">
+                <h2>آراء وثقة عملائنا</h2>
+                <p>آراء حقيقية من أسر استفادت من خدماتنا</p>
+            </div>
+            
+            <div class="reviews-wrapper">
+                <div class="rating-dashboard">
+                    <div class="rating-huge-number">4.8</div>
+                    <div class="rating-stars-main">⭐⭐⭐⭐★</div>
+                    <div class="rating-sub-count">من 5 نجوم<br>بناءً على 47 تقييماً</div>
+                    
+                    <div class="bar-container-group">
+                        <div class="bar-row">
+                            <span>5 نجوم</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+                            <span>85%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span>4 نجوم</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 12%;"></div></div>
+                            <span>12%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span>3 نجوم</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 2%;"></div></div>
+                            <span>2%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span>2 نجوم</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 1%;"></div></div>
+                            <span>1%</span>
+                        </div>
+                        <div class="bar-row">
+                            <span>1 نجمة</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 0%;"></div></div>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-reviews">
+                    <div class="user-review-card">
+                        <div class="user-card-header">
+                            <div class="user-avatar" style="background-color: #1e3a8a; color: white;">A</div>
+                            <div class="user-meta">
+                                <h4>د. أحمد الزهراني</h4>
+                                <span class="service-tag">رعاية والدتي المسنة</span>
+                                <span class="time-tag">منذ شهرين</span>
+                            </div>
+                            <div class="user-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <p class="user-comment">"تعاقدنا مع منصة تيسير لتوفير ممرضة لوالدتي الغالية، وبصراحة قمة في الأمانة، الالتزام بالمواعيد والرعاية النفسية الممتازة. شكراً لكم."</p>
+                        <div class="verification-badge">✔ شهادة موثقة</div>
+                    </div>
+
+                    <div class="user-review-card">
+                        <div class="user-card-header">
+                            <div class="user-avatar" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80');"></div>
+                            <div class="user-meta">
+                                <h4>سارة القحطاني</h4>
+                                <span class="service-tag">علاج طبيعي بعد العملية</span>
+                                <span class="time-tag">منذ 3 أشهر</span>
+                            </div>
+                            <div class="user-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <p class="user-comment">"المعالج الطبيعي كان محترفاً جداً. وضع لي برنامج تأهيل مناسب وساعدني على استعادة حركتي بعد عملية الركبة. أنصح بشدة."</p>
+                        <div class="verification-badge">✔ شهادة موثقة</div>
+                    </div>
+
+                    <div class="user-review-card">
+                        <div class="user-card-header">
+                            <div class="user-avatar" style="background-image: url('https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80');"></div>
+                            <div class="user-meta">
+                                <h4>خالد العتيبي</h4>
+                                <span class="service-tag">دعم نفسي للأطفال</span>
+                                <span class="time-tag">منذ أسبوع</span>
+                            </div>
+                            <div class="user-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <p class="user-comment">"خدمة جيدة جداً. الاختصاصية النفسية ساعدت ابني في تجاوز قلقه الاجتماعي. الأدوات والمتابعة كانت جيدة."</p>
+                        <div class="verification-badge">✔ شهادة موثقة</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-form" class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2 class="form-title">طلب خدمة رعاية منزلية</h2>
+                <p class="form-subtitle">يرجى ملء البيانات التالية وسيتم تحويلك مباشرة للواتساب لإتمام الحجز</p>
+                
+                <form id="careForm">
+                    <div class="form-group">
+                        <label for="parentName">اسم ولي الأمر</label>
+                        <input type="text" id="parentName" required placeholder="أدخل الاسم الكامل لولي الأمر">
+                    </div>
+
+                    <div class="form-group">
+                        <label>نوع الحالة</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="ذكر" checked> ذكر
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="أنثى"> أنثى
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="patientAge">عمر الحالة (المريض)</label>
+                        <input type="number" id="patientAge" required min="1" max="120" placeholder="أدخل عمر المريض بالسنوات">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">نوع الخدمة المطلوبة</label>
+                        <select id="serviceType" required>
+                            <option value="" disabled selected>اختر الخدمة المطلوبة...</option>
+                            <option value="رعاية كاملة ومستمرة">رعاية كاملة ومستمرة</option>
+                            <option value="تمريض منزلي مؤقت">تمريض منزلي مؤقت</option>
+                            <option value="تمارين علاج طبيعي وتأهيل">تمارين علاج طبيعي وتأهيل</option>
+                            <option value="رعاية القدم السكرية والجروح">رعاية القدم السكرية والجروح</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="region">المنطقة الإدارية</label>
+                        <select id="region" required>
+                            <option value="" disabled selected>اختر المنطقة...</option>
+                            <option value="الرياض">منطقة الرياض</option>
+                            <option value="مكة المكرمة">منطقة مكة المكرمة</option>
+                            <option value="المدينة المنورة">منطقة المدينة المنورة</option>
+                            <option value="القصيم">منطقة القصيم</option>
+                            <option value="المنطقة الشرقية">المنطقة الشرقية</option>
+                            <option value="عسير">منطقة عسير</option>
+                            <option value="تبوك">منطقة تبوك</option>
+                            <option value="حائل">منطقة حائل</option>
+                            <option value="الحدود الشمالية">منطقة الحدود الشمالية</option>
+                            <option value="جازان">منطقة جازان</option>
+                            <option value="نجران">منطقة nجران</option>
+                            <option value="الباحة">منطقة الباحة</option>
+                            <option value="الجوف">منطقة الجوف</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">المحافظة / المدينة</label>
+                        <select id="city" required disabled>
+                            <option value="" disabled selected>اختر المنطقة أولاً...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="conditionDescription">وصف الحالة ومتطلباتها</label>
+                        <textarea id="conditionDescription" rows="4" required placeholder="يرجى شرح الحالة المرضية بالكامل ومتطلباتها..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">إرسال وتس اب  </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>جميع الحقوق محفوظة © 2026 منصة تيسير للرعاية الطبية المنزلية.</p>
+            <div class="footer-links">
+                <a href="#home">الرئيسية</a> · 
+                <a href="#why-us">لماذا نحن</a> · 
+                <a href="#services">الخدمات</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-actions">
+        <a href="https://www.snapchat.com/add/yhy_smyl2551" class="float-btn float-snap" target="_blank" title="تابعنا على سناب شات">👻</a>
+        <a href="tel:+966501439874" class="float-btn float-call" title="اتصال هاتفي مباشر">📞</a>
+        <a href="https://wa.me/966501439874" class="float-btn float-wa" target="_blank" title="تواصل عبر الواتساب">💬</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
